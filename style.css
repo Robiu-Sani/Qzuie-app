@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(213, 221, 223);
+}
+.myuizeapp,.RulesBox,.Question,.resultBox{
+    width: 300px;
+    height: 580px;
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 10px 50px rgb(143, 143, 143);
+    display: none;
+}
+.img{
+    width: 100%;
+    padding: 15px 10px;
+}
+.img img{
+    width: 100%;
+}
+.text{
+    padding: 20px 10px;
+    color: rgb(56, 56, 56);
+}
+.text h3{
+    font: 20px;
+    line-height: 30px;
+    margin-top: 10px;
+}
+.text p{
+    font-size: 14px;
+    line-height: 25px;
+}
+.MyBtn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.MyBtn button{
+    width: 120px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background: tomato;
+    border: 0;
+    border-top-left-radius: 15px;
+    cursor: pointer;
+    transition: .2s;
+}
+.MyBtn button:hover{
+    background:  rgb(151, 208, 255);
+}
+
+/* -----------------------secend div ------------------ */
+
+.RullesTitle{
+    padding: 35px 0px;
+    text-align: center;
+}
+.RullesTitle p{
+    font-weight: 550;
+    font-size: 20px;
+    color: rgb(97, 97, 97);
+}
+.RolesList{
+    padding: 15px 15px 10px 35px;
+}
+.RolesList ol{
+    padding-top: 10px;
+}
+.RolesList ol li{
+    color: rgb(97, 97, 97);
+    padding: 7px 0px;
+    line-height: 30px;
+    font-size: 16px;
+}
+.RullesBtn{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.RullesBtn button{
+    width: 120px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: tomato;
+    border: 0;
+    transition: .2s;
+    cursor: pointer;
+}
+.RullesBtn button:hover{
+    background:  rgb(99, 206, 255);
+}
+.RullesBtn button:nth-child(1){
+    border-top-right-radius: 15px;
+}
+.RullesBtn button:nth-child(1):hover{
+    background: rgb(255, 38, 0);
+}
+.RullesBtn button:nth-child(2){
+    border-top-left-radius: 15px;
+}
+
+
+/* =---------------------quiesan div work ----------------------- */
+
+.questionHeader{
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.questionHeader p{
+    font-size: 14px;
+    color: rgb(70, 70, 70);
+    font-weight: bold;
+}
+.QuestionTime{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(36, 175, 255, 0.267);
+    border-radius: 3px;
+}
+.QuestionTime p{
+    margin-right: 7px;
+    color: rgb(65, 65, 65);
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 5px;
+}
+.timeCount{
+    background: rgb(48, 48, 48);
+    color: aliceblue;
+    padding: 2px;
+    width: 30px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 3px;
+}
+.timeLine{
+    position: absolute;
+    top: 11%;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background:rgb(0, 140, 255);
+    transition: .1s;
+}
+.quesanAndOption{
+    padding: 23px 15px 35px 15px;
+    border-bottom: 1px solid rgb(109, 175, 250);
+    height: 430px;
+}
+.MainQuesan{
+    padding: 20px 0px;
+}
+.MainQuesan h2{
+    font-size: 18px;
+    line-height: 25px;
+    color: rgb(53, 53, 53);
+}
+.Options{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+    padding: 20px 10px;
+    border: 2px solid rgb(164, 206, 255);
+    background: rgba(159, 220, 255, 0.212);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .1s;
+}
+.Options:hover{
+    border: 2px solid rgb(84, 164, 255);
+    background: rgba(36, 175, 255, 0.267);
+}
+.Options p{
+    color: rgb(59, 59, 59);
+    font-size: 15px;
+}
+.QuesanBottomBtn{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+}
+.QuesanBottomBtn p{
+    font-size: 14px;
+    color: rgb(107, 107, 107);
+    padding: 7px 0px 0px 15px;
+}
+.QuesanBottomBtn button{
+    width: 120px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: tomato;
+    border: 0;
+    border-top-left-radius: 20px;
+    transition: .2s;
+    cursor: pointer;
+}
+.QuesanBottomBtn button:hover{
+    background: rgb(109, 175, 250);
+}
+.tic{
+    color: #19ff25;
+}
+.cros{
+    color: #ff4a5c;
+}
+
+
+/* ========================result page disine here ================== */
+
+
+.resultBox p{
+    text-align: center;
+    font-size: 15px;
+    color: rgb(63, 63, 62);
+    margin-top: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.resultImg{
+    width: 100%;
+    padding: 80px 60px 120px 60px;
+}
+.resultImg img{
+    width: 100%;
+}
+.resultScore p{
+    margin-top: 15px;
+    font-size: 16px;
+}
+.result{
+    font-weight: bold;
+}
+.ResultBtn{
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ResultBtn button{
+    width: 110px;
+    border: 0;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    background: tomato;
+    border-radius: 30px;
+    transition: .3s ease;
+    cursor: pointer;
+}
+.ResultBtn button:hover{
+    background: rgb(0, 217, 255);
+}
+
+/* ============ js difiend clss here =============== */
+.active{
+    display: block;
+}
+.correct{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+    padding: 20px 10px;
+    background: #00ff3c3b;
+    border: 2px solid #2eff5f;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
+}
+.correct p{
+    color: #0f7727;
+    font-size: 15px;
+}
+.incorrect{
+    background: rgba(255, 38, 0, 0.205);
+    border: 2px solid rgb(255, 135, 113);
+}
+.incorrect p{
+    color: #721c24;
+}
+.disabel{
+    pointer-events: none;
+}
